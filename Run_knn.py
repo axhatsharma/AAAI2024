@@ -7,11 +7,10 @@ import torch
 import pickle
 from utils import *
 
-openai.api_type = "azure"
-openai.api_base = "<API_BASE>"
-openai.api_version = "<API_VERSION>"
-KEY = "<API_KEY>"
-openai.api_key = KEY #os.getenv("OPENAI_API_KEY")
+openai.api_type = ""
+openai.api_base = ""
+openai.api_version = ""
+openai.api_key = ""
 
 
 def ada(text):
