@@ -8,9 +8,9 @@ import pickle
 from utils import *
 
 openai.api_type = "azure"
-openai.api_base = "https://cdb-aia-guil-eastus2-gpt-01.openai.azure.com/"
-openai.api_version = "2022-12-01"
-KEY = "8f8e8672e1194b6f937c6ced6d1dfceb"
+openai.api_base = "<API_BASE>"
+openai.api_version = "<API_VERSION>"
+KEY = "<API_KEY>"
 openai.api_key = KEY #os.getenv("OPENAI_API_KEY")
 
 
@@ -64,7 +64,7 @@ write_pickle("embeddings/Competition_embeddings.pkl", Embeddings)
 ################################
 
 MATH = read_pickle("embeddings/MATH.pkl")
-Competition = read_pickle("embeddings/Competition.pkl")
+Competition = read_pickle("embeddings/Competition_embeddings.pkl")
 
 MATH = torch.tensor(MATH)
 
