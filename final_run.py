@@ -22,7 +22,9 @@ start = int(args.start)
 end = int(args.end)
 oai_i = int(args.i)
 
-open_ai_ids = pd.read_excel("data/GPT4-turbo-endpoints.xlsx") # originally had the details of models used. Skip this step if using only one model and fill the details below
+open_ai_ids = pd.read_excel("data/GPT4-turbo-endpoints.xlsx") 
+'''Originally had the details of models used. 
+Skip this step if using only one model and fill the details below. '''
 
 openai.api_type = "azure"
 openai.api_base = open_ai_ids.iloc[oai_i]['Base']
