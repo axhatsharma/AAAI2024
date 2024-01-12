@@ -30,8 +30,12 @@
   ``` bash
   python Run_knn.py
   ```
-Step 3:
-        python final_run.py
+- Step 3: 
+    ``` bash
+    python final_run.py
+    ```
         
-Step 4: 
-        python submit_json.py
+- Step 4:
+  ``` bash  
+  python submit_json.py
+  ```
