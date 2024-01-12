@@ -1,6 +1,11 @@
-Model used:
+# AAAI2024 Track-2
 
-Azure openai "GPT-4-turbo" version "2023-07-01-preview"
+## Requirements
+- Python 3.7+
+- All other requirements are stored in requirements.txt
+  
+## Model used:
+- Azure openai "GPT-4-turbo" version "2023-07-01-preview"
 
 1. Firstly, we ran the AutoPlan(https://arxiv.org/abs/2305.15064) on MATH dataset to get the strategies to solve each question.
 2. Ran ada-embeddings on MATH questions and Competition questions, and got 5 nearest neighbors in MATH for each question in Competition dataset using K-nearest neighbors algorithm.
