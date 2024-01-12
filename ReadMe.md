@@ -2,7 +2,7 @@ Model used:
 
 Azure openai "GPT-4-turbo" version "2023-07-01-preview"
 
-1. Firstly, we ran the Autoplan(https://arxiv.org/abs/2305.15064) on MATH dataset to get the strategies to solve each question.
+1. Firstly, we ran the AutoPlan(https://arxiv.org/abs/2305.15064) on MATH dataset to get the strategies to solve each question.
 2. Ran ada-embeddings on MATH questions and Competition questions, and got 5 nearest neighbors in MATH for each question in Competition dataset using K-nearest neighbors algorithm.
 3. Using 5 nearest neighbors, we did fewshot prompting and derived strategy for each question in Competition dataset, and finally executed the derived strategy to get the final answer using GPT-4.
 4. Finally, did some post processing to extract final answers from gpt-4 responses.
